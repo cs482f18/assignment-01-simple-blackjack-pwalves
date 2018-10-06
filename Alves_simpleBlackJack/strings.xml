@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">simpleBlackjack</string>
+
+    <string name="textStand">Stand</string>
+    <string name="textHit">HIT!</string>
+    <string name="textNewGame">New Game!</string>
+    <string name="textPlayer">Player</string>
+    <string name="textDealer">Dealer</string>
+    <string name="textPValue">0</string>
+    <string name="textDValue">0</string>
+    <string name="textGameState">Running</string>
+    <string name="textCard"> </string>
+</resources>
