@@ -50,7 +50,7 @@ _Notes:_
 
 *	Late Submission: Following the general principle specified in the Syllabus, for this assignment, a late penalty of 10% will be applied if submitted within 24 hours of the due date (Fri, Oct 05). If you submit after 24 hours of the due date but within 72 hours (Sun, Oct 07), you will receive a penalty of 20%. 
 
-#Program Demo Link
+# Program Demo Link
 
 https://youtu.be/dYvmKH76EsI
 
