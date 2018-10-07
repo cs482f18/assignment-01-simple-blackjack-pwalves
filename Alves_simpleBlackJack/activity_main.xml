@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/playerCard1"
+        style="@style/CardFront"
+        android:layout_marginRight="300dp"
+        android:layout_marginBottom="100dp"
+        android:background="@color/colorFront"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/playerCard2"
+        style="@style/CardFront"
+        android:layout_marginRight="150dp"
+        android:layout_marginBottom="100dp"
+        android:background="@color/colorFront"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/playerCard3"
+        style="@style/CardFront"
+        android:background="@color/colorFront"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/playerCard4"
+        style="@style/CardFront"
+        android:layout_marginLeft="150dp"
+        android:layout_marginBottom="100dp"
+        android:background="@color/colorFront"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/playerCard5"
+        style="@style/CardFront"
+        android:layout_marginLeft="300dp"
+        android:layout_marginBottom="100dp"
+        android:background="@color/colorFront"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/compCard1"
+        style="@style/CardFront"
+        android:layout_marginRight="300dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/colorFront"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/compCard2"
+        style="@style/CardFront"
+        android:layout_marginRight="150dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/colorFront"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/compCard3"
+        style="@style/CardFront"
+        android:background="@color/colorFront"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/compCard4"
+        style="@style/CardFront"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/colorFront"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/compCard5"
+        style="@style/CardFront"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/colorFront"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/playerTitle"
+        android:text="@string/textPlayer"
+        style="@style/AppText"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/compTitle"
+        android:text="@string/textDealer"
+        style="@style/AppText"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/compValue"
+        android:text="@string/textDValue"
+        style="@style/AppText"
+        android:layout_marginTop="36dp"
+        app:layout_constraintTop_toTopOf="@id/compTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/playerValue"
+        android:text="@string/textPValue"
+        style="@style/AppText"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="@id/playerTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/gameOutput"
+        android:text="@string/textGameState"
+        style="@style/AppText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/standButton"
+        style="@style/GameButton"
+        android:text="@string/textStand"
+        android:onClick="playerStand"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintTop_toBottomOf="@id/playerCard3"
+        app:layout_constraintRight_toLeftOf="@id/playerTitle"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/hitButton"
+        style="@style/GameButton"
+        android:text="@string/textHit"
+        android:onClick="playerHit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="36dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/playerTitle"
+        app:layout_constraintTop_toBottomOf="@id/playerCard3" />
+
+    <Button
+        android:id="@+id/newGameButton"
+        style="@style/GameButton"
+        android:text="@string/textNewGame"
+        android:onClick="newGame"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="36dp"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintBottom_toTopOf="@id/compCard3"
+        app:layout_constraintRight_toLeftOf="@id/compTitle"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
