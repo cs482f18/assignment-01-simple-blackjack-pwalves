@@ -5,7 +5,7 @@ import android.util.Log;
 /**
  * Makes Cards to be used by other classes.
  * @author Peter Alves
- * @version 1.0
+ * @version 1.0  -- date -- 
  */
 public class CardFactory {
 
@@ -14,7 +14,7 @@ public class CardFactory {
 
     /**
      * Makes a deck of cards given the number of decks to make.
-     * @param deckNum
+     * @param deckNum -- description
      * @return Card array containing all of the cards made.
      */
     public Card [] makeDeck(int deckNum){
