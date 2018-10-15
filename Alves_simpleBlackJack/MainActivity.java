@@ -63,7 +63,10 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Sets the game to a beginning state. Each player gets 2 cards, their value is displayed, and blackjack state is checked.
-     * @return void
+     * @return void -- Don't need to add it
+     * -- From Oracle Java guideline - " The @return tag is required for every method that returns something other than void, 
+     * -- even if it is redundant with the method description. (Whenever possible, find something non-redundant (ideally, more 
+     * -- specific) to use for the tag comment.) "
      */
     public void setStage(){
         myGame = new CardGame(1);
