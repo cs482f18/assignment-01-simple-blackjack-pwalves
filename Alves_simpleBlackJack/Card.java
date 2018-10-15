@@ -5,11 +5,14 @@ import android.util.Log;
 /**
  * Class for Card objects. Cards contain their suit, number, value, and symbol.
  * @author Peter Alves
+ * -- add date in the @version tag such as @version 1.0 10/06.2018
  * @version 1.0
  */
 public class Card {
 
+    /** Put a description of the instance variable */
     private int suit = -1;
+    /** The numeric value of the Card */
     private int number = -1;
     private int value = -1;
     private String symbol = "INVALID";
@@ -18,14 +21,16 @@ public class Card {
      * Creates a card object given the number on the card and the suit of the card.
      * nSuit ranges from 0 to 3.
      * nNumber ranges from 0 to 12.
-     * @param nSuit
-     * @param nNumber
+     * -- write a description of the parameter like the following
+     * @param nSuit the numeric suite value of the card
+     * @param nNumber the numeric rank of the card
      */
     public Card(int nSuit, int nNumber){
         if(!isValidCard(nSuit, nNumber)){
             Log.w("PAPROGRAM", "Invalid Card");
         }
         else{
+            // These are the places you should be using the switch/case
             suit = nSuit;
             number = nNumber;
             if(nNumber >=10){
@@ -57,8 +62,8 @@ public class Card {
 
     /**
      * Determines if the inputs will create a valid card.
-     * @param nSuit
-     * @param nNumber
+     * @param nSuit  -- param description
+     * @param nNumber -- param description
      * @return True if the inputs are valid, false if not.
      */
     public boolean isValidCard(int nSuit, int nNumber){
